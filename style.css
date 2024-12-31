@@ -1,0 +1,307 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Sauce Tomato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+}
+
+/* Scrolling Text */
+.scrolling-text {
+    width: 100%;
+    background: linear-gradient(90deg, blue, purple);
+    background-size: 300% 100%;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 1.5em;
+    text-align: center;
+    overflow: hidden;
+    animation: gradient-animation 6s linear infinite; /* Color animation */
+}
+
+.scrolling-text p {
+    white-space: nowrap;
+    margin: 0;
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Background gradient animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Landing Page */
+.landing-page {
+    text-align: center; /* Centers the text horizontally */
+    padding: 100px 20px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Ensures content is stacked vertically */
+    justify-content: center; /* Vertically centers the content */
+    height: 100vh; /* Full viewport height */
+    font-family: 'Sauce Tomato', sans-serif; /* Apply the font */
+}
+
+.main-title {
+    font-size: 3em; /* Adjust this value to control the name size */
+    font-weight: bold;
+    margin: 0;
+}
+
+.first-name,
+.last-name {
+    text-align: center; /* Center-aligns the text */
+}
+
+.subtitle {
+    font-size: 3em; /* Set this to the same size as the name */
+    margin-top: 10px;
+    text-align: center; /* Ensures subtitle is centered */
+}
+
+
+/* Second Page Section (black background after scroll) */
+.second-page {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Typewriter Animation */
+.typewriter h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Sauce Tomato', sans-serif;
+}
+
+/* Individual lines of typewriter text */
+.line {
+    display: inline-block;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+   
+
+}
+
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Add a cursor to the last line */
+.line:last-child {
+    padding-right: 5px; /* Small space for the cursor */
+}
+
+
+* Remove cursor after typing */
+.line:last-of-type {
+    animation: typing 2s steps(20, end), blink 0.75s step-end 5;
+    border-right: none; /* Cursor disappears */
+}
+
+/* Floating Images Page */
+.floating-images-page {
+    height: 20vh;
+    background-color: #111;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* Last Page Section */
+.last-page {
+    height: 100vh; /* Full-screen height */
+    background-color: #111; /* Black background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.last-page-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.last-page-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.last-page-content ul li {
+    margin: 10px 0;
+}
+
+.last-page-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.last-page-content ul li a:hover {
+    color: purple;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+/* General Reset for Consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Typography */
+  body {
+    font-family: 'Sauce Tomato', sans-serif;
+    line-height: 1.5;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1, h2 {
+      font-size: 2em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1, h2 {
+      font-size: 1.5em;
+    }
+  }
+  
+  /* Scrolling Text */
+  .scrolling-text {
+    font-size: 1em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .scrolling-text {
+      font-size: 1em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .scrolling-text {
+      font-size: 1em;
+    }
+  }
+  
+  /* Second Page Typewriter */
+  .typewriter {
+    font-size: 1em;
+    margin: 30px auto;
+    width: 80%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .typewriter {
+      font-size: 0.6em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .typewriter {
+      font-size: 0.7em;
+    }
+  }
+  
+  /* Footer Page */
+  .footer-links {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.5em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-links a {
+      font-size: 0.8em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer-links a {
+      font-size: 0.2em;
+    }
+  }
+  
