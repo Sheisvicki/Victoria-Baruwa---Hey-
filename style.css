@@ -261,20 +261,20 @@ footer {
   
   /* Second Page Typewriter */
   .typewriter {
-    font-size: 0.4em;
+    font-size: 1em;
     margin: 30px auto;
     width: 80%;
   }
   
   @media screen and (max-width: 768px) {
     .typewriter {
-      font-size: 0.9em;
+      font-size: 1em;
     }
   }
   
   @media screen and (max-width: 480px) {
     .typewriter {
-      font-size: 0.7em;
+      font-size: 0.9em;
     }
   }
   
@@ -319,7 +319,7 @@ footer {
 
 @media (max-width: 480px) {
     .scrolling-text {
-        font-size: 0.8em; /* Smaller font size for very small devices */
+        font-size: 1em; /* Smaller font size for very small devices */
         padding: 3px 0;
     }
 }
