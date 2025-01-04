@@ -244,24 +244,24 @@ footer {
   
   /* Scrolling Text */
   .scrolling-text {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   
   @media screen and (max-width: 768px) {
     .scrolling-text {
-      font-size: 1em;
+      font-size: 1.2em;
     }
   }
   
   @media screen and (max-width: 480px) {
     .scrolling-text {
-      font-size: 0.9em;
+      font-size: 1em;
     }
   }
   
   /* Second Page Typewriter */
   .typewriter {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 30px auto;
     width: 80%;
   }
@@ -274,7 +274,7 @@ footer {
   
   @media screen and (max-width: 480px) {
     .typewriter {
-      font-size: 0.9em;
+      font-size: 1em;
     }
   }
   
@@ -304,24 +304,3 @@ footer {
       font-size: 0.1em;
     }
   }
-
-/* Adjust scrolling text for smaller screens */
-@media (max-width: 768px) {
-    .scrolling-text {
-        font-size: 1em; /* Adjust font size for smaller devices */
-        padding: 5px 0; /* Adjust padding */
-    }
-
-    .scrolling-text p {
-        animation: scroll-left 15s linear infinite; /* Slightly slower animation for better readability */
-    }
-}
-
-@media (max-width: 480px) {
-    .scrolling-text {
-        font-size: 1em; /* Smaller font size for very small devices */
-        padding: 3px 0;
-    }
-}
-
-  
