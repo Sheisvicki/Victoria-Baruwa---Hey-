@@ -281,7 +281,7 @@ footer {
   /* Footer Page */
   .footer-links {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #000;
     color: #fff;
   }
@@ -290,12 +290,12 @@ footer {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 0.5em;
+    font-size: 0.2em;
   }
   
   @media screen and (max-width: 768px) {
     .footer-links a {
-      font-size: 0.6em;
+      font-size: 0.3em;
     }
   }
   
