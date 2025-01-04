@@ -304,4 +304,24 @@ footer {
       font-size: 0.1em;
     }
   }
+
+/* Adjust scrolling text for smaller screens */
+@media (max-width: 768px) {
+    .scrolling-text {
+        font-size: 1em; /* Adjust font size for smaller devices */
+        padding: 5px 0; /* Adjust padding */
+    }
+
+    .scrolling-text p {
+        animation: scroll-left 15s linear infinite; /* Slightly slower animation for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .scrolling-text {
+        font-size: 0.8em; /* Smaller font size for very small devices */
+        padding: 3px 0;
+    }
+}
+
   
