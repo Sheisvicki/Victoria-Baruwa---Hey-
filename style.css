@@ -244,18 +244,18 @@ footer {
   
   /* Scrolling Text */
   .scrolling-text {
-    font-size: 0.6em;
+    font-size: 1em;
   }
   
   @media screen and (max-width: 768px) {
     .scrolling-text {
-      font-size: 0.6em;
+      font-size: 1em;
     }
   }
   
   @media screen and (max-width: 480px) {
     .scrolling-text {
-      font-size: 0.4em;
+      font-size: 0.9em;
     }
   }
   
@@ -268,13 +268,13 @@ footer {
   
   @media screen and (max-width: 768px) {
     .typewriter {
-      font-size: 0.3em;
+      font-size: 0.9em;
     }
   }
   
   @media screen and (max-width: 480px) {
     .typewriter {
-      font-size: 0.1em;
+      font-size: 0.7em;
     }
   }
   
