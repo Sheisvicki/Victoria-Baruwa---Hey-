@@ -306,20 +306,20 @@ footer {
   }
 
 footer {
-    font-size: 16px; /* Default size for larger screens */
+    font-size: 14px; /* Default size for larger screens */
     text-align: center;
     padding: 10px 0;
 }
 
 @media (max-width: 768px) { /* For tablets and smaller devices */
     footer {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
 @media (max-width: 480px) { /* For mobile devices */
     footer {
-        font-size: 10px;
+        font-size: 08px;
     }
 }
 
